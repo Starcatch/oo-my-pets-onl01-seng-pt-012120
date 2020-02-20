@@ -22,7 +22,10 @@ class Owner
    end 
    
    def self.all
+     # .all returns all instances of Owner that have been created
      @@owners
   end 
+  
+  def self.count
  
 end 
