@@ -20,4 +20,9 @@ class Owner
      #can say its species
      "I am a #{self.species}."
    end 
- end 
+   
+   def self.all
+     @@owners
+  end 
+ 
+end 
