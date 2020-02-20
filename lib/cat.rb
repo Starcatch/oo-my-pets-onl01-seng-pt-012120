@@ -7,6 +7,6 @@ class Cat
     @mood = "nervous"
     @owner = owner
     @@cats << self
-    owner.cats << self 
+    owner.cat << self 
   end
 end
