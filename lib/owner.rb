@@ -1,40 +1,11 @@
-class Fish
-  attr_reader :name
-  attr_accessor :mood
 
-  def initialize(name)
-    @name = name
-    @mood = "nervous"
-  end
-end
-
-class Cat
-  attr_reader :name
-  attr_accessor :mood
-
-  def initialize(name)
-    @name = name
-    @mood = "nervous"
-  end
-end
-
-class Dog
-  attr_reader :name
-  attr_accessor :mood
-
-  def initialize(name)
-    @name = name
-    @mood = "nervous"
-  end
-
-end
 
 class Owner
   attr_reader :species
-  attr_accessor :name, :pets, :fish, :dog, :cat
+  attr_accessor :name, :pets, :dog, :cat
 
   @@all = []
-  @@pets = {:fishes => [], :dogs => [], :cats => []}
+  @@pets = {:dogs => [], :cats => []}
 
   def initialize(species)
     @species = species
@@ -62,9 +33,6 @@ class Owner
     @@pets
   end
 
-  def buy_fish(fish)
-    @@pets[:fishes] << Fish.new(fish)
-  end
 
   def buy_cat(cat)
     @@pets[:cats] << Cat.new(cat)
@@ -86,14 +54,9 @@ class Owner
     end
   end
 
-  def feed_fish
-    @@pets[:fishes].each do |fish|
-      fish.mood = 'happy'
-    end
-  end
 
   def list_pets
-    "I have #{pets[:fishes].length} fish, #{pets[:dogs].length} dog(s), and #{pets[:cats].length} cat(s)."
+    "I have  #{pets[:dogs].length} dog(s), and #{pets[:cats].length} cat(s)."
   end
 
   def sell_pets
