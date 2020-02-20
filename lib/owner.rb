@@ -5,6 +5,9 @@ class Owner
  OWNERS = []
  
   def initialize(species)
+    @species = species
+    O << self
+    @pets = {:fishes => [], :dogs => [], :cats => []}
   end 
   
   def say_species
