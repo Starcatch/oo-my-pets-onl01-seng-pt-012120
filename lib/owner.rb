@@ -5,4 +5,7 @@ class Owner
  
   def initialize(species)
   end 
+  
+  def say_species
+  end 
 end
