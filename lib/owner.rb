@@ -15,4 +15,6 @@ class Owner
      @cat = []
      @dog = []
    end 
+   
+   
  end 
