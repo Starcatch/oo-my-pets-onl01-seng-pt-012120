@@ -35,4 +35,10 @@ class Owner
     # .reset_all can reset the owners that have been created
     self.all.clear
   end
+  
+  def buy_dog(name)
+    Dog.new(name, self)
+  end 
+  
+  
 end 
