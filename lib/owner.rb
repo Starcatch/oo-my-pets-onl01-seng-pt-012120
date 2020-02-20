@@ -36,6 +36,15 @@ class Owner
     self.all.clear
   end
   
+  def cats
+    Cat.all.select do |cat|
+      cet.owner == self
+    end 
+  end 
+  
+  
+  
+  
   def buy_dog(name)
     Dog.new(name, self)
   end 
