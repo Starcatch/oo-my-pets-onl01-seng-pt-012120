@@ -10,3 +10,4 @@ class Owner
     @name = name
     @@all << self
   end
+end 
