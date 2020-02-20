@@ -1,5 +1,5 @@
 class Owner
-  attr_accessor :cat, :dog
+  attr_accessor :cats, :dogs
    # can have a name
      # cannot change owner's name
      # initializes with species set to human
