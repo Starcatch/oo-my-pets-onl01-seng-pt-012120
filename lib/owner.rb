@@ -32,4 +32,6 @@ class Owner
   end 
   
   def self.reset_all 
+    # .reset_all can reset the owners that have been created
+    
 end
