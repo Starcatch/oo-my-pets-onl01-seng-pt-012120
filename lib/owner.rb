@@ -30,4 +30,6 @@ class Owner
     # .count returns the number of owners that have been created
       self.all.length
   end 
+  
+  def self.reset_all 
 end
